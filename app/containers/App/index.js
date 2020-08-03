@@ -10,6 +10,7 @@ import OrderListPage from 'containers/OrderListPage/Loadable';
 import CreateOrderPage from 'containers/CreateOrderPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import NewOrders from '../NewOrders'
+import TicketList from '../TicketList'
 
 import { useInjectSaga } from 'utils/injectSaga';
 import saga from './saga';
@@ -38,6 +39,7 @@ export function App({ orders, loading, error, onLoadOrders }) {
         <Route exact path="/order-list" component={OrderListPage} />
         <Route exact path="/create-order" component={CreateOrderPage} />
         <Route exact path="/new-orders" component={NewOrders} />
+        <Route exact path="/ticket-list" component={TicketList} />
         <Route component={NotFoundPage} />
       </Switch>
     </div>
