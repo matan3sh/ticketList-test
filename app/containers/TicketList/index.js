@@ -40,7 +40,7 @@ const TicketList = () => {
 
   return (
     <div className="ticket-list">
-      <h3>Showing {tickets.length} Results</h3>
+      <h3><span onClick={()=>setTickets(initialTickets)}>Restore</span> Showing {tickets.length} Results</h3>
       {tickets.map((ticket, index) => (
         <TicketItem ticket={ticket} key={index} onHideTicket={onHideTicket} />
       ))}

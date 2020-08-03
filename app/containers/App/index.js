@@ -9,8 +9,8 @@ import HomePage from 'containers/HomePage/Loadable';
 import OrderListPage from 'containers/OrderListPage/Loadable';
 import CreateOrderPage from 'containers/CreateOrderPage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
-import NewOrders from '../NewOrders'
-import TicketList from '../TicketList'
+import NewOrders from '../NewOrders';
+import TicketList from '../TicketList';
 
 import { useInjectSaga } from 'utils/injectSaga';
 import saga from './saga';
